@@ -1,0 +1,66 @@
+{
+  "extensionName": {
+    "message": "Social Helpers",
+    "description": "Esta extensão é para ajudar a responder questões do Twitter utilizando a hashtag #fxhelp."
+  },
+  "extensionDescription": {
+    "message": "Esta extensão é para ajudar a responder questões do Twitter utilizando a hashtag #fxhelp.",
+    "description": "Esta extensão é para ajudar a responder questões do Twitter utilizando a hashtag #fxhelp."
+  },
+  "menuItemSelectionLogger": {
+    "message": "Log '%s' to the browser console",
+    "description": "Title of context menu item that logs the selected text when clicked."
+  },
+  "menuItemTelegram": {
+    "message": "Telegram",
+    "description": "Telegram."
+  },
+  "menuJoinUS": {
+    "message": "Junte-se a nós",
+    "description": "Separator to Telegram"
+  },
+  "menuCommonReplies": {
+    "message": "Respostas Comuns",
+    "description": "Link Common Replies"
+  },
+  "menuSocialSupportGuidelines": {
+    "message": "Diretrizes do Suporte Social",
+    "description": "Guidelines to Social Support"
+  },
+  "menuTipsFromCommunity": {
+    "message": "Algumas dicas da comunidade",
+    "description": "Some tips from the community"
+  },
+  "menuHowDoIgetHelp": {
+    "message": "Como pedir ajuda",
+    "description": "How do I get help?"
+  },
+  "menuEscalate": {
+    "message": "Como escalar ou encontrar mais ajuda?",
+    "description": "Where and When to Escalate or Find More Help?"
+  },
+  "menuRolesInTheSocialSupportProgram": {
+    "message": "Funções no programa de Suporte Social",
+    "description": "Roles in the Social Support Program"
+  },
+  "menuTheCasualSocialHelper": {
+    "message": "Social Helper casual (TweetDeck)",
+    "description": "The Casual Social Helper (TweetDeck)"
+  },
+  "menuTheOfficialSocialHelper": {
+    "message": "Social Helper oficial (Reply by Buffer)",
+    "description": "The Official Social Helper (Reply by Buffer)"
+  },
+  "menuTheTriager": {
+    "message": "Triagem",
+    "description": "The Triager"
+  },
+  "menuTheSocialProgramModerator": {
+    "message": "Moderador Social Suporte",
+    "description": "The Social Program Moderator"
+  },
+  "menuConfiguringTweetDeck": {
+    "message": "Configurando o TweetDeck",
+    "description": "Configuring TweetDeck"
+  }
+}

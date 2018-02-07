@@ -1,0 +1,62 @@
+{
+  "extensionName": {
+    "message": "Social Helpers",
+    "description": "This extension is for help to answer questions on Twitter using the hashtag #fxhelp."
+  },
+  "extensionDescription": {
+    "message": "This extension is for help to answer questions on Twitter using the hashtag #fxhelp.",
+    "description": "This extension is for help to answer questions on Twitter using the hashtag #fxhelp."
+  },
+  "menuItemTelegram": {
+    "message": "Telegram",
+    "description": "Link Telegram."
+  },
+  "menuJoinUS": {
+    "message": "Join us",
+    "description": "Separator to Telegram"
+  },
+  "menuCommonReplies": {
+    "message": "Common Replies",
+    "description": "Link Common Replies"
+  },
+  "menuSocialSupportGuidelines": {
+    "message": "Social Support Guidelines",
+    "description": "Guidelines to Social Support"
+  },
+  "menuTipsFromCommunity": {
+    "message": "Some tips from the community",
+    "description": "Some tips from the community"
+  },
+  "menuHowDoIgetHelp": {
+    "message": "How do I get help?",
+    "description": "How do I get help?"
+  },
+  "menuEscalate": {
+    "message": "Where and When to Escalate or Find More Help?",
+    "description": "Where and When to Escalate or Find More Help?"
+  },
+  "menuRolesInTheSocialSupportProgram": {
+    "message": "Roles in the Social Support Program",
+    "description": "Roles in the Social Support Program"
+  },
+  "menuTheCasualSocialHelper": {
+    "message": "The Casual Social Helper (TweetDeck)",
+    "description": "The Casual Social Helper (TweetDeck)"
+  },
+  "menuTheOfficialSocialHelper": {
+    "message": "The Official Social Helper (Reply by Buffer)",
+    "description": "The Official Social Helper (Reply by Buffer)"
+  },
+  "menuTheTriager": {
+    "message": "The Triager",
+    "description": "The Triager"
+  },
+  "menuTheSocialProgramModerator": {
+    "message": "The Social Program Moderator",
+    "description": "The Social Program Moderator"
+  },
+  "menuConfiguringTweetDeck": {
+    "message": "Configuring TweetDeck",
+    "description": "Configuring TweetDeck"
+  }
+}

@@ -1,0 +1,73 @@
+html, body {
+	background-color: #FCFCFC;
+	min-width: 250px;
+}
+.panel {
+	margin-bottom: 5px;
+	margin-top: 7px;
+}
+.default {
+	cursor: default;
+	color: #00000F;
+	width: 250px;
+	margin-top: 2px;
+}
+.defaultOptions {
+	cursor: default;
+	color: #00000F;
+	width: 250px;
+	margin-top: 2px;
+	margin-left: 4px;
+}
+.panel-section-header .text-section-header {
+	color: #00000F;
+}
+.panel-list-item:hover {
+	background-color: #EDEDF0;
+}
+.panel-section-body a {
+	text-decoration: none;
+	display: flex;
+}
+.item_icon {
+	margin-right: 6px;
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+}
+.item_icon_options {
+	margin-left: 12px;
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+}
+.joinUS {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	color: #88807F;
+	text-decoration: none;
+}
+.panel-section-separator {
+	margin-top: 5px;
+	color: #88807F;
+}
+.item_icon_right {
+	margin-left: 2px;
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+}
+.item_icon_submenu {
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+}
+.dropdown-container {
+    display: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+    background-color: #FCFCFC;
+}
