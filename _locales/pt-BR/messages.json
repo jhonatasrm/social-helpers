@@ -1,19 +1,15 @@
 {
   "extensionName": {
     "message": "Social Helpers",
-    "description": "Esta extensão é para ajudar a responder questões do Twitter utilizando a hashtag #fxhelp."
+    "description": "Social Helpers"
   },
   "extensionDescription": {
-    "message": "Esta extensão é para ajudar a responder questões do Twitter utilizando a hashtag #fxhelp.",
-    "description": "Esta extensão é para ajudar a responder questões do Twitter utilizando a hashtag #fxhelp."
-  },
-  "menuItemSelectionLogger": {
-    "message": "Log '%s' to the browser console",
-    "description": "Title of context menu item that logs the selected text when clicked."
+    "message": "Esta webextension é para ajudar a responder perguntas no Twitter utilizando a hashtag #fxhelp, dando algumas dicas, respostas comuns e explicando como funciona o programa de Social Support.",
+    "description": "This webextension is for help to answer questions on Twitter using the hashtag #fxhelp, giving some tips, common replies and explaining how works the Social Support program."
   },
   "menuItemTelegram": {
     "message": "Telegram",
-    "description": "Telegram."
+    "description": "Telegram"
   },
   "menuJoinUS": {
     "message": "Junte-se a nós",

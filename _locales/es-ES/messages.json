@@ -1,15 +1,15 @@
 {
   "extensionName": {
     "message": "Social Helpers",
-    "description": "This extension is for help to answer questions on Twitter using the hashtag #fxhelp."
+    "description": "Social Helpers"
   },
   "extensionDescription": {
-    "message": "Esta extensión es para ayudar a responder preguntas en Twitter utilizando el hashtag #fxhelp.",
+    "message": "Esta extensión es para ayudar a responder preguntas en Twitter utilizando el hashtag #fxhelp, dando algunos consejos, respuestas comunes y explicando cómo funciona el programa de Social Support.",
     "description": "This extension is for help to answer questions on Twitter using the hashtag #fxhelp."
   },
   "menuItemTelegram": {
     "message": "Telegram",
-    "description": "Telegram."
+    "description": "Telegram"
   },
   "menuJoinUS": {
     "message": "Únase a nosotros",

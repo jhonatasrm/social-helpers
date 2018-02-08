@@ -1,11 +1,11 @@
 {
   "extensionName": {
     "message": "Social Helpers",
-    "description": "This extension is for help to answer questions on Twitter using the hashtag #fxhelp."
+    "description": "Social Helpers"
   },
   "extensionDescription": {
-    "message": "This extension is for help to answer questions on Twitter using the hashtag #fxhelp.",
-    "description": "This extension is for help to answer questions on Twitter using the hashtag #fxhelp."
+    "message": "This webextension is for help to answer questions on Twitter using the hashtag #fxhelp, giving some tips, common replies and explaining how works the Social Support program.",
+    "description": "This webextension is for help to answer questions on Twitter using the hashtag #fxhelp, giving some tips, common replies and explaining how works the Social Support program."
   },
   "menuItemTelegram": {
     "message": "Telegram",

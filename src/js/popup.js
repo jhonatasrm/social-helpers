@@ -7,6 +7,14 @@ const mainPanel = document.getElementById("mainPanel");
 const btnMoreOptionsRoles = document.getElementById('btnMoreOptionsRoles');
 const optionRoles = document.getElementById('optionsRoles');
 
+function onUpdated(tab) {
+  console.log(`Tab updated: ${tab.id}`);
+}
+
+function onError(error) {
+  console.log(`Error: ${error}`);
+}
+
 // dropdown guidelines
 btnMoreOptionsGuidelines.addEventListener('click', function(event) {
     if (optionsGuidelines.style.display === 'none'){
@@ -30,54 +38,66 @@ btnMoreOptionsRoles.addEventListener('click', function(event){
   }
 });
 
-
 document.addEventListener('click', function(event) {
   // Common Replies
   if (event.target.id == 'menuCommonReplies') {
-    browser.tabs.create({url: `https://support.mozilla.org/${locale}/kb/army-of-awesome-common-replies`});
+    let pageReplies = browser.tabs.update({url: `https://support.mozilla.org/${locale}/kb/army-of-awesome-common-replies`});
+    pageReplies.then(onUpdated, onError);
   }
   // menu more options inside Social Support Guidelines
   else if (event.target.id == 'menuTipsFromCommunity') {
     if (locale == 'pt-BR'){
-      browser.tabs.create({url: `https://support.mozilla.org/pt-BR/kb/diretrizes-do-suporte-social#w_algumas-dicas-da-comunidade`});
+      let pageTipsCommunity = browser.tabs.update({url: `https://support.mozilla.org/pt-BR/kb/diretrizes-do-suporte-social#w_algumas-dicas-da-comunidade`});
+      pageTipsCommunity.then(onUpdated, onError);
     }else{
-      browser.tabs.create({url: `https://support.mozilla.org/${locale}/kb/social-support-guidelines#w_some-tips-from-the-community`});
+      pageTipsCommunity = browser.tabs.update({url: `https://support.mozilla.org/${locale}/kb/social-support-guidelines#w_some-tips-from-the-community`});
+      pageTipsCommunity.then(onUpdated, onError);
     }
   }
   else if (event.target.id == 'menuHowDoIgetHelp') {
     if (locale == 'pt-BR'){
-      browser.tabs.create({url: `https://support.mozilla.org/pt-BR/kb/diretrizes-do-suporte-social#w_como-pedir-ajuda`});
+      let pageHowgetHelp = browser.tabs.update({url: `https://support.mozilla.org/pt-BR/kb/diretrizes-do-suporte-social#w_como-pedir-ajuda`});
+      pageHowgetHelp.then(onUpdated, onError);
     }else{
-      browser.tabs.create({url: `https://support.mozilla.org/${locale}/kb/social-support-guidelines#w_how-do-i-get-help`});
+      pageHowgetHelp = browser.tabs.update({url: `https://support.mozilla.org/${locale}/kb/social-support-guidelines#w_how-do-i-get-help`});
+      pageHowgetHelp.then(onUpdated, onError);
     }
   }
   else if (event.target.id == 'menuEscalate') {
     if (locale == 'pt-BR'){
-      browser.tabs.create({url: `https://support.mozilla.org/pt-BR/kb/diretrizes-do-suporte-social#w_como-escalar-ou-encontrar-mais-ajuda`});
+      let pageMenuEscalate = browser.tabs.update({url: `https://support.mozilla.org/pt-BR/kb/diretrizes-do-suporte-social#w_como-escalar-ou-encontrar-mais-ajuda`});
+      pageMenuEscalate.then(onUpdated, onError);
     }else{
-      browser.tabs.create({url: `https://support.mozilla.org/${locale}/kb/social-support-guidelines#w_where-and-when-to-escalate-or-find-more-help`});
+      pageMenuEscalate = browser.tabs.update({url: `https://support.mozilla.org/${locale}/kb/social-support-guidelines#w_where-and-when-to-escalate-or-find-more-help`});
+      pageMenuEscalate.then(onUpdated, onError);
     }
   }
   // menu Roles Social Support Program
   else if (event.target.id == 'menuTheCasualSocialHelper'){
-    browser.tabs.create({url: `https://support.mozilla.org/${locale}/kb/roles-social-support-program#w_the-casual-social-helper-tweetdeck`});
+    let pageCasualSocialHelper = browser.tabs.update({url: `https://support.mozilla.org/${locale}/kb/roles-social-support-program#w_the-casual-social-helper-tweetdeck`});
+    pageCasualSocialHelper.then(onUpdated, onError);
   }
   else if (event.target.id == 'menuTheOfficialSocialHelper'){
-    browser.tabs.create({url: `https://support.mozilla.org/${locale}/kb/roles-social-support-program#w_the-official-social-helper-reply-by-buffer`});
+    let pageOfficialSocialHelper = browser.tabs.update({url: `https://support.mozilla.org/${locale}/kb/roles-social-support-program#w_the-official-social-helper-reply-by-buffer`});
+    pageOfficialSocialHelper.then(onUpdated, onError);
   }
   else if (event.target.id == 'menuTheTriager'){
-    browser.tabs.create({url: `https://support.mozilla.org/${locale}/kb/roles-social-support-program#w_the-triager`});
+    let pageMenuTriager = browser.tabs.update({url: `https://support.mozilla.org/${locale}/kb/roles-social-support-program#w_the-triager`});
+    pageMenuTriager.then(onUpdated, onError);
   }
   else if (event.target.id == 'menuTheSocialProgramModerator'){
-    browser.tabs.create({url: `https://support.mozilla.org/${locale}/kb/roles-social-support-program#w_the-social-program-moderator`});
+    let pageSocialProgramModerator = browser.tabs.update({url: `https://support.mozilla.org/${locale}/kb/roles-social-support-program#w_the-social-program-moderator`});
+    pageSocialProgramModerator.then(onUpdated, onError);
   }
   // configuring TweetDeck
   else if (event.target.id == 'menuConfiguringTweetDeck'){
-    browser.tabs.create({url: `https://docs.google.com/document/d/13iGyBVSDOaeqP46oMU6hqedhn0oXFTHLUTW5RVr6tUQ/edit`});
+    let pageMenuConfiguringTweetDeck = browser.tabs.update({url: `https://docs.google.com/document/d/13iGyBVSDOaeqP46oMU6hqedhn0oXFTHLUTW5RVr6tUQ/edit`});
+    pageMenuConfiguringTweetDeck.then(onUpdated, onError);
   }
   // telegram channel
   else if (event.target.id == 'menuTelegram') {
-    browser.tabs.create({url: `http://t.me/respond`});
+    var pageMenuTelegram = browser.tabs.update({url: `http://t.me/respond`});
+    pageMenuTelegram.then(onUpdated, onError);
   }
   event.preventDefault();
 });
