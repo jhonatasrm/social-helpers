@@ -1,6 +1,6 @@
 # Social Helpers
 
-This webextension is for help to answer questions on Twitter using the hashtag #fxhelp, giving some tips, common replies and explaining how works the Social Support program.
+This webextension provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works.
 
 This repository is available under the [Mozilla License Public License Version 2.0](https://github.com/jhonatasrm/social-helpers/blob/master/LICENSE)
 

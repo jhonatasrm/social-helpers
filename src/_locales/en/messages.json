@@ -4,8 +4,8 @@
     "description": "Social Helpers"
   },
   "extensionDescription": {
-    "message": "This webextension is for help to answer questions on Twitter using the hashtag #fxhelp, giving some tips, common replies and explaining how works the Social Support program.",
-    "description": "This webextension is for help to answer questions on Twitter using the hashtag #fxhelp, giving some tips, common replies and explaining how works the Social Support program."
+    "message": "This webextension provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works.",
+    "description": "This webextension provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works."
   },
   "menuItemTelegram": {
     "message": "Telegram",
