@@ -19,32 +19,32 @@ function onError(error) {
 btnMoreOptionsGuidelines.addEventListener('click', function(event) {
     if (optionsGuidelines.style.display === 'none'){
       optionsGuidelines.style.display = 'inline';
-      imageGuidelines.src = '../../res/icons/arrowhead-up.png';
+      imageGuidelines.src = '../res/icons/arrowhead-up.png';
       mainPanel.style.display = 'none';
     }else{
       optionsGuidelines.style.display = 'none'
-      imageGuidelines.src = '../../res/icons/arrowhead-down.png';
+      imageGuidelines.src = '../res/icons/arrowhead-down.png';
     }
 }, true);
 // dropdown Roles
 btnMoreOptionsRoles.addEventListener('click', function(event){
   if (optionRoles.style.display === 'none'){
     optionRoles.style.display = 'inline';
-    imageRoles.src = '../../res/icons/arrowhead-up.png';
+    imageRoles.src = '../res/icons/arrowhead-up.png';
     mainPanel.style.display = 'none';
   }else{
     optionRoles.style.display = 'none';
-    imageRoles.src = '../../res/icons/arrowhead-down.png';
+    imageRoles.src = '../res/icons/arrowhead-down.png';
   }
 });
 
 document.addEventListener('click', function(event) {
-  // Common Replies
+  // common replies
   if (event.target.id == 'menuCommonReplies') {
     let pageReplies = browser.tabs.update({url: `https://support.mozilla.org/${locale}/kb/army-of-awesome-common-replies`});
     pageReplies.then(onUpdated, onError);
   }
-  // menu more options inside Social Support Guidelines
+  // menu options Social Support Guidelines
   else if (event.target.id == 'menuTipsFromCommunity') {
     if (locale == 'pt-BR'){
       let pageTipsCommunity = browser.tabs.update({url: `https://support.mozilla.org/pt-BR/kb/diretrizes-do-suporte-social#w_algumas-dicas-da-comunidade`});

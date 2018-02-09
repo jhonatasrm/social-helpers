@@ -5,7 +5,7 @@
   },
   "extensionDescription": {
     "message": "Esta extensión es para ayudar a responder preguntas en Twitter utilizando el hashtag #fxhelp, dando algunos consejos, respuestas comunes y explicando cómo funciona el programa de Social Support.",
-    "description": "This extension is for help to answer questions on Twitter using the hashtag #fxhelp."
+    "description": "This webextension is for help to answer questions on Twitter using the hashtag #fxhelp, giving some tips, common replies and explaining how works the Social Support program."
   },
   "menuItemTelegram": {
     "message": "Telegram",
