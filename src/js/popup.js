@@ -1,11 +1,22 @@
 var locale = navigator.language;
-const btnMoreOptionsGuidelines = document.getElementById("btnMoreOptionsGuidelines");
-const optionsGuidelines = document.getElementById("optionsGuidelines");
-const imageGuidelines = document.getElementById("image_submenu_guidelines");
-const imageRoles = document.getElementById("image_submenu_roles");
-const mainPanel = document.getElementById("mainPanel");
+// main panel
+const mainPanel = document.getElementById('mainPanel');
+// images dropdown buttons
+const imageGuidelines = document.getElementById('image_submenu_guidelines');
+const imageRoles = document.getElementById('image_submenu_roles');
+const imageVideos = document.getElementById('image_submenu_videos');
+// images folders
+const imageFolderGuidelines = document.getElementById('folderGuidelines');
+const imageFolderRoles = document.getElementById('folderRoles');
+const imageFolderVideos = document.getElementById('folderVideos');
+// buttons
+const btnMoreOptionsGuidelines = document.getElementById('btnMoreOptionsGuidelines');
 const btnMoreOptionsRoles = document.getElementById('btnMoreOptionsRoles');
+const btnMoreOptionsVideos = document.getElementById('btnMoreOptionsVideos');
+// options
+const optionsGuidelines = document.getElementById('optionsGuidelines');
 const optionRoles = document.getElementById('optionsRoles');
+const optionsVideos = document.getElementById('optionsVideos')
 
 function onUpdated(tab) {
   console.log(`Tab updated: ${tab.id}`);
@@ -18,23 +29,40 @@ function onError(error) {
 // dropdown guidelines
 btnMoreOptionsGuidelines.addEventListener('click', function(event) {
     if (optionsGuidelines.style.display === 'none'){
+      imageFolderGuidelines.src = '../res/icons/folder_opened-32.png';
       optionsGuidelines.style.display = 'inline';
       imageGuidelines.src = '../res/icons/arrowhead-up.png';
       mainPanel.style.display = 'none';
     }else{
       optionsGuidelines.style.display = 'none'
       imageGuidelines.src = '../res/icons/arrowhead-down.png';
+      imageFolderGuidelines.src = '../res/icons/folder_closed-32.png';
     }
 }, true);
-// dropdown Roles
+// dropdown roles
 btnMoreOptionsRoles.addEventListener('click', function(event){
   if (optionRoles.style.display === 'none'){
+    imageFolderRoles.src = '../res/icons/folder_opened-32.png';
     optionRoles.style.display = 'inline';
     imageRoles.src = '../res/icons/arrowhead-up.png';
     mainPanel.style.display = 'none';
   }else{
     optionRoles.style.display = 'none';
     imageRoles.src = '../res/icons/arrowhead-down.png';
+    imageFolderRoles.src = '../res/icons/folder_closed-32.png';
+  }
+});
+// dropdown videos
+btnMoreOptionsVideos.addEventListener('click', function(event){
+  if (optionsVideos.style.display === 'none'){
+    imageFolderVideos.src = '../res/icons/folder_video_opened-32.png';
+    optionsVideos.style.display = 'inline';
+    imageVideos.src = '../res/icons/arrowhead-up.png';
+    mainPanel.style.display = 'none';
+  }else{
+    optionsVideos.style.display = 'none';
+    imageVideos.src = '../res/icons/arrowhead-down.png';
+    imageFolderVideos.src = '../res/icons/folder_video_closed-32.png';
   }
 });
 
@@ -93,6 +121,19 @@ document.addEventListener('click', function(event) {
   else if (event.target.id == 'menuConfiguringTweetDeck'){
     let pageMenuConfiguringTweetDeck = browser.tabs.update({url: `https://docs.google.com/document/d/13iGyBVSDOaeqP46oMU6hqedhn0oXFTHLUTW5RVr6tUQ/edit`});
     pageMenuConfiguringTweetDeck.then(onUpdated, onError);
+  }
+  // videos configuring TweetDeck
+  else if (event.target.id == 'menuVideoConfiguringTweetDeck') {
+    var pageMenuVideoConfiguringTweetDeck = browser.tabs.update({url: `https://www.screencast.com/t/rcWKKdEH`});
+    pageMenuVideoConfiguringTweetDeck.then(onUpdated, onError);
+  }
+  else if (event.target.id == 'menuVideoHowIgnoreUser') {
+    var pageMenuVideoHowIgnoreUser = browser.tabs.update({url: `https://www.screencast.com/t/cxlEe1Cp2xn`});
+    pageMenuVideoHowIgnoreUser.then(onUpdated, onError);
+  }
+  else if (event.target.id == 'menuVideoGetOldAnswersFromAoA') {
+    var pageMenuVideoGetOldAnswersFromAoA = browser.tabs.update({url: `https://www.screencast.com/t/q9aIKq9nQv`});
+    pageMenuVideoGetOldAnswersFromAoA.then(onUpdated, onError);
   }
   // telegram channel
   else if (event.target.id == 'menuTelegram') {

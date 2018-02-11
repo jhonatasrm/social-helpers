@@ -40,12 +40,12 @@
     "description": "Roles in the Social Support Program"
   },
   "menuTheCasualSocialHelper": {
-    "message": "The Casual Social Helper (TweetDeck)",
-    "description": "The Casual Social Helper (TweetDeck)"
+    "message": "The Casual Social Helper",
+    "description": "The Casual Social Helper"
   },
   "menuTheOfficialSocialHelper": {
-    "message": "The Official Social Helper (Reply by Buffer)",
-    "description": "The Official Social Helper (Reply by Buffer)"
+    "message": "The Official Social Helper",
+    "description": "The Official Social Helper"
   },
   "menuTheTriager": {
     "message": "The Triager",
@@ -58,5 +58,21 @@
   "menuConfiguringTweetDeck": {
     "message": "Configuring TweetDeck",
     "description": "Configuring TweetDeck"
+  },
+  "menuVideoFolder": {
+    "message": "TweetDeck setup videos",
+    "description": "TweetDeck setup videos"
+  },
+  "menuVideoConfiguringTweetDeck": {
+    "message": "Configuring TweetDeck",
+    "description": "Configuring TweetDeck"
+  },
+  "menuVideoHowIgnoreUser": {
+    "message": "How ignore user",
+    "description": "How ignore user"
+  },
+  "menuVideoGetOldAnswersFromAoA": {
+    "message": "How get old answers from AoA",
+    "description": "How get old answers from AoA"
   }
 }

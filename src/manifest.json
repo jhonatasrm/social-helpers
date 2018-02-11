@@ -17,16 +17,7 @@
     "32": "../res/icons/social_helpers_dark-32.png"
   },
 		"default_title": "__MSG_extensionName__",
-		"default_popup": "../html/popup.html",
-		"theme_icons": [{
-				"light": "../res/icons/social_helpers_light-16.png",
-				"dark": "../res/icons/social_helpers_dark-16.png",
-				"size": 16
-			},{
-				"light": "../res/icons/social_helpers_light-32.png",
-				"dark": "../res/icons/social_helpers_dark-32.png",
-				"size": 32
-				}]
+		"default_popup": "../html/popup.html"
 	},
 	"permissions": [
 		"tabs",
