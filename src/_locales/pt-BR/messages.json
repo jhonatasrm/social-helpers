@@ -28,12 +28,12 @@
     "description": "Some tips from the community"
   },
   "menuHowDoIgetHelp": {
-    "message": "Como pedir ajuda",
+    "message": "Como pedir ajuda?",
     "description": "How do I get help?"
   },
   "menuEscalate": {
-    "message": "Como escalar ou encontrar mais ajuda?",
-    "description": "Where and When to Escalate or Find More Help?"
+    "message": "Como escalar questões?",
+    "description": "How to Escalate issues or Find Help?"
   },
   "menuRolesInTheSocialSupportProgram": {
     "message": "Funções no programa de Suporte Social",
