@@ -13,8 +13,8 @@
 	"browser_action": {
 		"browser_style": true,
 		"default_icon": {
-    "16": "../res/icons/social_helpers_dark-16.png",
-    "32": "../res/icons/social_helpers_dark-32.png"
+    "16": "../res/icons/social_helpers-16.png",
+    "32": "../res/icons/social_helpers-32.png"
   },
 		"default_title": "__MSG_extensionName__",
 		"default_popup": "../html/popup.html"

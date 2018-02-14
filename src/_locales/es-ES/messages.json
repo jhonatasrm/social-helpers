@@ -74,5 +74,9 @@
     "menuVideoGetOldAnswersFromAoA": {
       "message": "How get old answers from AoA",
       "description": "How get old answers from AoA"
+    },
+    "menuItemSurvey": {
+      "message": "Become a Social Helper",
+      "description": "Become a Social Helper"
     }
 }

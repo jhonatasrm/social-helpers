@@ -1,4 +1,5 @@
 var locale = navigator.language;
+var strWindowFeatures = "menubar=no,location=yes,resizable=no,scrollbars=yes,status=yes";
 // main panel
 const mainPanel = document.getElementById('mainPanel');
 // images dropdown buttons
@@ -9,10 +10,6 @@ const imageVideos = document.getElementById('image_submenu_videos');
 const imageFolderGuidelines = document.getElementById('folderGuidelines');
 const imageFolderRoles = document.getElementById('folderRoles');
 const imageFolderVideos = document.getElementById('folderVideos');
-// buttons
-const btnMoreOptionsGuidelines = document.getElementById('btnMoreOptionsGuidelines');
-const btnMoreOptionsRoles = document.getElementById('btnMoreOptionsRoles');
-const btnMoreOptionsVideos = document.getElementById('btnMoreOptionsVideos');
 // options
 const optionsGuidelines = document.getElementById('optionsGuidelines');
 const optionRoles = document.getElementById('optionsRoles');
@@ -27,7 +24,7 @@ function onError(error) {
 }
 
 // dropdown guidelines
-btnMoreOptionsGuidelines.addEventListener('click', function(event) {
+document.getElementById('btnMoreOptionsGuidelines').addEventListener('click', function() {
     if (optionsGuidelines.style.display === 'none'){
       imageFolderGuidelines.src = '../res/icons/folder_opened-32.png';
       optionsGuidelines.style.display = 'inline';
@@ -38,9 +35,9 @@ btnMoreOptionsGuidelines.addEventListener('click', function(event) {
       imageGuidelines.src = '../res/icons/arrowhead-down.png';
       imageFolderGuidelines.src = '../res/icons/folder_closed-32.png';
     }
-}, true);
+}, false);
 // dropdown roles
-btnMoreOptionsRoles.addEventListener('click', function(event){
+document.getElementById('btnMoreOptionsRoles').addEventListener('click', function(){
   if (optionRoles.style.display === 'none'){
     imageFolderRoles.src = '../res/icons/folder_opened-32.png';
     optionRoles.style.display = 'inline';
@@ -51,9 +48,9 @@ btnMoreOptionsRoles.addEventListener('click', function(event){
     imageRoles.src = '../res/icons/arrowhead-down.png';
     imageFolderRoles.src = '../res/icons/folder_closed-32.png';
   }
-});
+}, false);
 // dropdown videos
-btnMoreOptionsVideos.addEventListener('click', function(event){
+document.getElementById('btnMoreOptionsVideos').addEventListener('click', function(){
   if (optionsVideos.style.display === 'none'){
     imageFolderVideos.src = '../res/icons/folder_video_opened-32.png';
     optionsVideos.style.display = 'inline';
@@ -64,7 +61,7 @@ btnMoreOptionsVideos.addEventListener('click', function(event){
     imageVideos.src = '../res/icons/arrowhead-down.png';
     imageFolderVideos.src = '../res/icons/folder_video_closed-32.png';
   }
-});
+}, false);
 
 document.addEventListener('click', function(event) {
   // common replies
@@ -134,6 +131,10 @@ document.addEventListener('click', function(event) {
   else if (event.target.id == 'menuVideoGetOldAnswersFromAoA') {
     var pageMenuVideoGetOldAnswersFromAoA = browser.tabs.update({url: `https://www.screencast.com/t/q9aIKq9nQv`});
     pageMenuVideoGetOldAnswersFromAoA.then(onUpdated, onError);
+  }
+  // survey
+  else if (event.target.id == 'menuItemSurvey') {
+    window.open("https://goo.gl/forms/D2nDPWuchpvZqdGS2", "survey", strWindowFeatures);
   }
   // telegram channel
   else if (event.target.id == 'menuTelegram') {
