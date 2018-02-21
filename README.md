@@ -1,8 +1,14 @@
-# Social Helpers
+[<img align="right" src="https://img.shields.io/github/issues/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/license/jhonatasrm/social-helpers.svg)
+[<img align="right" src="https://img.shields.io/github/license/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/issues/jhonatasrm/social-helpers.svg)
+[<img align="right" src="https://img.shields.io/github/forks/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/issues/jhonatasrm/social-helpers.svg)
+[<img align="right" src="https://img.shields.io/github/stars/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/stars/jhonatasrm/social-helpers.svg)
+[<img align="right" src="https://img.shields.io/github/release/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/release/jhonatasrm/social-helpers.svg)
 
-This webextension provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works.
+# Social Helpers [<img align="right" src="https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_2.png">](https://addons.mozilla.org/en-US/firefox/addon/social-helpers/)
 
-## How to test this webextension
+This extension provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works.
+
+## How to test this extension
 
 1. Clone this repository git clone ```https://github.com/jhonatasrm/social-helpers.git```
 

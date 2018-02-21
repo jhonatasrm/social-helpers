@@ -134,7 +134,7 @@ document.addEventListener('click', function(event) {
   }
   // survey
   else if (event.target.id == 'menuItemSurvey') {
-    window.open("https://goo.gl/forms/D2nDPWuchpvZqdGS2", "survey", strWindowFeatures);
+    window.open("https://goo.gl/forms/88APypWlZlRBaliG3", "survey", strWindowFeatures);
   }
   // telegram channel
   else if (event.target.id == 'menuTelegram') {
