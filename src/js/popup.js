@@ -23,7 +23,7 @@ function onError(error) {
   console.log(`Error: ${error}`);
 }
 
-// dropdown guidelines
+// dropdown click text
 document.getElementById('btnMoreOptionsGuidelines').addEventListener('click', function() {
     if (optionsGuidelines.style.display === 'none'){
       imageFolderGuidelines.src = '../res/icons/folder_opened-32.png';
@@ -36,7 +36,6 @@ document.getElementById('btnMoreOptionsGuidelines').addEventListener('click', fu
       imageFolderGuidelines.src = '../res/icons/folder_closed-32.png';
     }
 }, false);
-// dropdown roles
 document.getElementById('btnMoreOptionsRoles').addEventListener('click', function(){
   if (optionRoles.style.display === 'none'){
     imageFolderRoles.src = '../res/icons/folder_opened-32.png';
@@ -49,8 +48,45 @@ document.getElementById('btnMoreOptionsRoles').addEventListener('click', functio
     imageFolderRoles.src = '../res/icons/folder_closed-32.png';
   }
 }, false);
-// dropdown videos
 document.getElementById('btnMoreOptionsVideos').addEventListener('click', function(){
+  if (optionsVideos.style.display === 'none'){
+    imageFolderVideos.src = '../res/icons/folder_video_opened-32.png';
+    optionsVideos.style.display = 'inline';
+    imageVideos.src = '../res/icons/arrowhead-up.png';
+    mainPanel.style.display = 'none';
+  }else{
+    optionsVideos.style.display = 'none';
+    imageVideos.src = '../res/icons/arrowhead-down.png';
+    imageFolderVideos.src = '../res/icons/folder_video_closed-32.png';
+  }
+}, false);
+
+// dropdown click arrows
+document.getElementById('image_submenu_guidelines').addEventListener('click', function() {
+    if (optionsGuidelines.style.display === 'none'){
+      imageFolderGuidelines.src = '../res/icons/folder_opened-32.png';
+      optionsGuidelines.style.display = 'inline';
+      imageGuidelines.src = '../res/icons/arrowhead-up.png';
+      mainPanel.style.display = 'none';
+    }else{
+      optionsGuidelines.style.display = 'none'
+      imageGuidelines.src = '../res/icons/arrowhead-down.png';
+      imageFolderGuidelines.src = '../res/icons/folder_closed-32.png';
+    }
+}, false);
+document.getElementById('image_submenu_roles').addEventListener('click', function(){
+  if (optionRoles.style.display === 'none'){
+    imageFolderRoles.src = '../res/icons/folder_opened-32.png';
+    optionRoles.style.display = 'inline';
+    imageRoles.src = '../res/icons/arrowhead-up.png';
+    mainPanel.style.display = 'none';
+  }else{
+    optionRoles.style.display = 'none';
+    imageRoles.src = '../res/icons/arrowhead-down.png';
+    imageFolderRoles.src = '../res/icons/folder_closed-32.png';
+  }
+}, false);
+document.getElementById('image_submenu_videos').addEventListener('click', function(){
   if (optionsVideos.style.display === 'none'){
     imageFolderVideos.src = '../res/icons/folder_video_opened-32.png';
     optionsVideos.style.display = 'inline';
