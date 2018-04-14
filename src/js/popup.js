@@ -152,7 +152,7 @@ document.addEventListener('click', function(event) {
   }
   // configuring TweetDeck
   else if (event.target.id == 'menuConfiguringTweetDeck'){
-    let pageMenuConfiguringTweetDeck = browser.tabs.update({url: `https://docs.google.com/document/d/13iGyBVSDOaeqP46oMU6hqedhn0oXFTHLUTW5RVr6tUQ/edit`});
+    let pageMenuConfiguringTweetDeck = browser.tabs.update({url: `https://support.mozilla.org/${locale}/kb/social-support-tools-and-workspace`});
     pageMenuConfiguringTweetDeck.then(onUpdated, onError);
   }
   // videos configuring TweetDeck
