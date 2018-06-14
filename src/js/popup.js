@@ -174,7 +174,7 @@ document.addEventListener('click', function(event) {
   }
   // telegram channel
   else if (event.target.id == 'menuTelegram') {
-    var pageMenuTelegram = browser.tabs.update({url: `http://t.me/respond`});
+    var pageMenuTelegram = browser.tabs.update({url: `https://t.me/joinchat/CJxxoEBuwEp8NA2tbynaKg`});
     pageMenuTelegram.then(onUpdated, onError);
   }
   event.preventDefault();
