@@ -102,8 +102,8 @@ document.getElementById('image_submenu_videos').addEventListener('click', functi
 document.addEventListener('click', function(event) {
   // common replies
   if (event.target.id == 'menuCommonReplies') {
-    let pageReplies = browser.tabs.update({url: `https://support.mozilla.org/${locale}/kb/army-of-awesome-common-replies`});
-    pageReplies.then(onUpdated, onError);
+    let pageReplies = `https://support.mozilla.org/${locale}/kb/army-of-awesome-common-replies`;
+    window.open(pageReplies);
   }
   // menu options Social Support Guidelines
   else if (event.target.id == 'menuTipsFromCommunity') {
