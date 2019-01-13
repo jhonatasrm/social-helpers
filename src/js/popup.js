@@ -67,7 +67,6 @@ document.getElementById('image_submenu_guidelines').addEventListener('click', fu
       imageFolderGuidelines.src = '../res/icons/folder_opened-32.png';
       optionsGuidelines.style.display = 'inline';
       imageGuidelines.src = '../res/icons/arrowhead-up.png';
-      mainPanel.style.display = 'none';
     }else{
       optionsGuidelines.style.display = 'none'
       imageGuidelines.src = '../res/icons/arrowhead-down.png';
@@ -79,7 +78,6 @@ document.getElementById('image_submenu_roles').addEventListener('click', functio
     imageFolderRoles.src = '../res/icons/folder_opened-32.png';
     optionRoles.style.display = 'inline';
     imageRoles.src = '../res/icons/arrowhead-up.png';
-    mainPanel.style.display = 'none';
   }else{
     optionRoles.style.display = 'none';
     imageRoles.src = '../res/icons/arrowhead-down.png';
@@ -91,7 +89,6 @@ document.getElementById('image_submenu_videos').addEventListener('click', functi
     imageFolderVideos.src = '../res/icons/folder_video_opened-32.png';
     optionsVideos.style.display = 'inline';
     imageVideos.src = '../res/icons/arrowhead-up.png';
-    mainPanel.style.display = 'none';
   }else{
     optionsVideos.style.display = 'none';
     imageVideos.src = '../res/icons/arrowhead-down.png';
