@@ -4,6 +4,7 @@
 [<img align="right" src="https://img.shields.io/github/stars/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/stars/jhonatasrm/social-helpers.svg)
 [<img align="right" src="https://img.shields.io/github/release/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/release/jhonatasrm/social-helpers.svg)
 
+![Social Helpers icon](src/res/icons/icon@2x.png)
 
 # Social Helpers [<img align="right" src="https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_2.png">](https://addons.mozilla.org/en-US/firefox/addon/social-helpers/)
 
