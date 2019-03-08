@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-	"version": "1.7",
+	"version": "1.8",
 	"homepage_url": "https://github.com/jhonatasrm/social-helpers",
 	"default_locale": "en",
 	"author": "Jhonatas Rodrigues",
@@ -25,8 +25,12 @@
 		"default_title": "__MSG_extensionName__",
 		"default_popup": "../html/popup.html"
 	},
+	"background": {
+		"scripts": ["/js/popup.js"]
+	},
 	"permissions": [
 		"tabs",
-		"storage"
+		"storage",
+		"activeTab"
 	]
 }

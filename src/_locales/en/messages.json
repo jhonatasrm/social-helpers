@@ -4,16 +4,21 @@
     "description": "Social Helpers"
   },
   "extensionDescription": {
-    "message": "This extension provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works.",
-    "description": "This extension provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works."
+    "message": "This add-on provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works.",
+    "description": "This add-on provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works."
+  },
+  "about": {
+    "message": "About Social Helpers"
+  },
+  "about_title": {
+    "message": "About"
+  },
+  "note":{
+    "message": "Note: This Add-on is completely free! Please consider make a small donation or write an review at addons.mozilla.org. Thank you!"
   },
   "menuItemTelegram": {
     "message": "Telegram",
     "description": "Link Telegram."
-  },
-  "menuJoinUS": {
-    "message": "Join us",
-    "description": "Separator to Telegram"
   },
   "menuCommonReplies": {
     "message": "Common Replies",
@@ -78,5 +83,95 @@
   "menuItemSurvey": {
     "message": "Become a Social Helper",
     "description": "Become a Social Helper"
+  },
+  "aboutItem1": {
+    "message": "1. Social Support Guidelines"
+  },
+  "aboutItem2": {
+    "message": "2. Roles in the Social Support Program"
+  },
+  "aboutItem3": {
+    "message": "3. TweetDeck setup videos"
+  },
+  "aboutItem4": {
+    "message": "4. Configuring TweetDeck"
+  },
+  "aboutItem5": {
+    "message": "5. Common Replies"
+  },
+  "aboutItem6": {
+    "message": "6. Become a Social Helper"
+  },
+  "aboutItem7": {
+    "message": "7. Join us in the Telegram group"
+  },
+  "release0": {
+    "message": "Release"
+  },
+  "release0d": {
+    "message": "v1.0 (February 19, 2018)"
+  },
+  "release1": {
+    "message": "Fix compatibility version\nFix link to Become a Social Helper\nMinor fixes"
+  },
+  "release1d": {
+    "message": "v1.1 (February 20, 2018)"
+  },
+  "release2": {
+    "message": "Open submenu clicking arrow\nMinor fixes"
+  },
+  "release2d": {
+    "message": "v1.2 (March 29, 2018)"
+  },
+  "release3": {
+    "message": "Updated links\nMinor fixes"
+  },
+  "release3d": {
+    "message": "v1.3 (April 14, 2018)"
+  },
+  "release4": {
+    "message": "Updated links\nMinor fixes"
+  },
+  "release4d": {
+    "message": "v1.4 (June 13, 2018)"
+  },
+  "release5": {
+    "message": "Updated links\nOpen Common Replies in another tab\nMinor fixes"
+  },
+  "release5d": {
+    "message": "v1.5 (July 26, 2018)"
+  },
+  "release6": {
+    "message": "Security update\nPerformance improvement"
+  },
+  "release6d": {
+    "message": "v1.6 (January 13, 2018)"
+  },
+  "release7": {
+    "message": "Minor Fixes"
+  },
+  "release7d": {
+    "message": "v1.7 (March 3, 2019)"
+  },
+  "release8": {
+    "message": "Security update\nRedesign"
+  },
+  "release8d": {
+    "message": "v1.8 (March 8, 2019)"
+  },
+  "changelog": {
+    "message": "Changelog"
+  },
+  "menuAbout": {
+    "message": "About"
+  },
+  "bugs": {
+    "message": "If you find any bugs, have any suggestions or some ideas for this add-on: Please create a new issue."
+  },
+  "works": {
+    "message": "This extension provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works."
+  },
+  "links": {
+    "message": "The add-on counts with the following useful links, which will help you take the first steps and start contributing:"
   }
 }

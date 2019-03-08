@@ -4,20 +4,25 @@
     "description": "Social Helpers"
   },
   "extensionDescription": {
-    "message": "Esta extensão fornece ajuda para responder a perguntas no Twitter usando a hashtag #fxhelp, dá algumas dicas, respostas comuns e explica como o programa de Social Support funciona.",
+    "message": "Esta extensão fornece ajuda para responder a perguntas no Twitter usando a hashtag #fxhelp, dá algumas dicas, respostas comuns e explica como o programa de Social Suporte funciona.",
     "description": "This extension provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works."
   },
   "menuItemTelegram": {
     "message": "Telegram",
     "description": "Telegram"
   },
-  "menuJoinUS": {
-    "message": "Junte-se a nós",
-    "description": "Separator to Telegram"
-  },
   "menuCommonReplies": {
     "message": "Respostas Comuns",
     "description": "Link Common Replies"
+  },
+  "about": {
+    "message": "Sobre Social Helpers"
+  },
+  "about_title": {
+    "message": "Sobre"
+  },
+  "note":{
+    "message": "Nota: Esta extensão é totalmente gratuita! Por favor, considere fazer uma pequena doação ou análise em addons.mozilla.org. Obrigado! "
   },
   "menuSocialSupportGuidelines": {
     "message": "Diretrizes do Suporte Social",
@@ -36,7 +41,7 @@
     "description": "How to Escalate issues or Find Help?"
   },
   "menuRolesInTheSocialSupportProgram": {
-    "message": "Funções no programa de Suporte Social",
+    "message": "Funções no Programa de Suporte Social",
     "description": "Roles in the Social Support Program"
   },
   "menuTheCasualSocialHelper": {
@@ -78,6 +83,95 @@
   "menuItemSurvey": {
     "message": "Torne-se um Social Helper",
     "description": "Become a Social Helper"
+  },
+  "aboutItem1": {
+    "message": "1. Diretrizes do Suporte Social"
+  },
+  "aboutItem2": {
+    "message": "2. Funções no Programa de Suporte Social"
+  },
+  "aboutItem3": {
+    "message": "3. Videos configurar TweetDeck"
+  },
+  "aboutItem4": {
+    "message": "4. Configurando o TweetDeck"
+  },
+  "aboutItem5": {
+    "message": "5. Respostas Comuns"
+  },
+  "aboutItem6": {
+    "message": "6. Torne-se um Social Helper"
+  },
+  "aboutItem7": {
+    "message": "7. Junte-se a nós no grupo do Telegram"
+  },
+  "release0": {
+    "message": "Lançamento"
+  },
+  "release0d": {
+    "message": "v1.0 (19 de Fevereiro de 2018)"
+  },
+  "release1": {
+    "message": "Correção de compatibilidade de versão\nCorreção do link para se tornar um Social Helper\nCorreções Menores"
+  },
+  "release1d": {
+    "message": "v1.1 (20 de Fevereiro de 2018)"
+  },
+  "release2": {
+    "message": "Abrir submenu clicando na seta\nCorreções menores"
+  },
+  "release2d": {
+    "message": "v1.2 (29 de Março de 2018)"
+  },
+  "release3": {
+    "message": "Atualização de links\nCorreções menores"
+  },
+  "release3d": {
+    "message": "v1.3 (14 de Abril 2018)"
+  },
+  "release4": {
+    "message": "Atualização de links\nCorreções menores"
+  },
+  "release4d": {
+    "message": "v1.4 (13 de Junho de 2018)"
+  },
+  "release5": {
+    "message": "Atualização de links\nAbrir respostas comuns em outra aba\nCorreções menores"
+  },
+  "release5d": {
+    "message": "v1.5 (26 de Julho de 2018)"
+  },
+  "release6": {
+    "message": "Atualização de segurança\nMelhoria de desempenho"
+  },
+  "release6d": {
+    "message": "v1.6 (13 de Janeiro de 2018)"
+  },
+  "release7": {
+    "message": "Correções menores"
+  },
+  "release7d": {
+    "message": "v1.7 (3 de Março de 2019)"
+  },
+  "release8": {
+    "message": "Atualização de segurança\nRedesign"
+  },
+  "release8d": {
+    "message": "v1.8 (8 de Março de 2019)"
+  },
+  "changelog": {
+    "message": "Alterações"
+  },
+  "menuAbout": {
+    "message": "Sobre"
+  },
+  "bugs": {
+    "message": "Se você encontrar algum bug, tiver sugestões ou algumas idéias para esta extensão. Por favor, crie uma nova issue."
+  },
+  "works": {
+    "message": "Esta extensão fornece ajuda para responder a perguntas no Twitter usando a hashtag #fxhelp, dá algumas dicas, respostas comuns e explica como o programa de Social Suporte funciona."
+  },
+  "links": {
+    "message": "A extensão conta com os seguintes links úteis, que ajudarão a dar os primeiros passos e começar a contribuir:"
   }
-
 }

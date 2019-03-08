@@ -1,4 +1,3 @@
-
 const menuCommonReplies = document.getElementById('menuCommonReplies'),
       menuSocialSupportGuidelines = document.getElementById('menuSocialSupportGuidelines'),
       TelegramMenu = document.getElementById('menuTelegram'),
@@ -11,5 +10,5 @@ let textElements = document.querySelectorAll('[data-manifest]');
 
 textElements = document.querySelectorAll('[data-i18n]');
     for (let element of textElements) {
-      element.textContent = browser.i18n.getMessage(element.dataset.i18n);
+      element.innerText = browser.i18n.getMessage(element.dataset.i18n);
     }

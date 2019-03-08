@@ -1,19 +1,52 @@
 var locale = navigator.language;
 var strWindowFeatures = "menubar=no,location=yes,resizable=no,scrollbars=yes,status=yes";
+var iconLocal = '../res/icons/social_helpers-32.png';
+var iconLocalOff = '../res/icons/social_helpers_off-32.png';
+
+// start about.html
+function handleInstalled() {
+    browser.tabs.create({
+    url: "../html/about.html"
+    });
+}
+browser.runtime.onInstalled.addListener(handleInstalled);
+
+browser.tabs.onUpdated.addListener(verifyPage);
+
 // main panel
 const mainPanel = document.getElementById('mainPanel');
-// images dropdown buttons
-const imageGuidelines = document.getElementById('image_submenu_guidelines');
-const imageRoles = document.getElementById('image_submenu_roles');
-const imageVideos = document.getElementById('image_submenu_videos');
-// images folders
-const imageFolderGuidelines = document.getElementById('folderGuidelines');
-const imageFolderRoles = document.getElementById('folderRoles');
-const imageFolderVideos = document.getElementById('folderVideos');
+
 // options
 const optionsGuidelines = document.getElementById('optionsGuidelines');
 const optionRoles = document.getElementById('optionsRoles');
-const optionsVideos = document.getElementById('optionsVideos')
+const optionsVideos = document.getElementById('optionsVideos');
+const separatorLine = document.getElementById('separatorLine');
+const separatorAbout = document.getElementById('separatorLineAbout');
+//
+const configuringTweetDeck = document.getElementById('menuConfiguringTweetDeck');
+const commonReplies = document.getElementById('menuCommonReplies');
+const itemSurvey = document.getElementById('menuItemSurvey');
+const menuTelegram = document.getElementById('menuTelegram');
+const menuAbout = document.getElementById('menuAbout');
+//btn
+const btnMoreOptionsRoles = document.getElementById('btnMoreOptionsRoles');
+const btnMoreOptionsVideos = document.getElementById('btnMoreOptionsVideos');
+const btnMoreOptionsGuidelines = document.getElementById('btnMoreOptionsGuidelines');
+// icons right
+const icon_btnMoreOptionsRoles = document.getElementById('icon_btnMoreOptionsRoles');
+const icon_btnMoreOptionsGuidelines = document.getElementById('icon_btnMoreOptionsGuidelines');
+const icon_btnMoreOptionsVideos = document.getElementById('icon_btnMoreOptionsVideos');
+
+// icons left
+const leftGuidelines = document.getElementById('leftGuidelines');
+const leftRoles = document.getElementById('leftRoles');
+const leftVideo = document.getElementById('leftVideo');
+const menuInfo = document.getElementById('menuInfo');
+const iconMenuTelegram = document.getElementById('iconMenuTelegram');
+const iconMenuSocialHelper = document.getElementById('iconMenuSocialHelper');
+
+const image_submenu_guidelines = document.getElementById('image_submenu_guidelines');
+
 
 function onUpdated(tab) {
   console.log(`Tab updated: ${tab.id}`);
@@ -24,76 +57,152 @@ function onError(error) {
 }
 
 // dropdown click text
-document.getElementById('btnMoreOptionsGuidelines').addEventListener('click', function() {
-    if (optionsGuidelines.style.display === 'none'){
-      imageFolderGuidelines.src = '../res/icons/folder_opened-32.png';
-      optionsGuidelines.style.display = 'inline';
-      imageGuidelines.src = '../res/icons/arrowhead-up.png';
-      mainPanel.style.display = 'none';
-    }else{
-      optionsGuidelines.style.display = 'none'
-      imageGuidelines.src = '../res/icons/arrowhead-down.png';
-      imageFolderGuidelines.src = '../res/icons/folder_closed-32.png';
-    }
-}, false);
-document.getElementById('btnMoreOptionsRoles').addEventListener('click', function(){
-  if (optionRoles.style.display === 'none'){
-    imageFolderRoles.src = '../res/icons/folder_opened-32.png';
-    optionRoles.style.display = 'inline';
-    imageRoles.src = '../res/icons/arrowhead-up.png';
-    mainPanel.style.display = 'none';
-  }else{
-    optionRoles.style.display = 'none';
-    imageRoles.src = '../res/icons/arrowhead-down.png';
-    imageFolderRoles.src = '../res/icons/folder_closed-32.png';
-  }
-}, false);
-document.getElementById('btnMoreOptionsVideos').addEventListener('click', function(){
-  if (optionsVideos.style.display === 'none'){
-    imageFolderVideos.src = '../res/icons/folder_video_opened-32.png';
-    optionsVideos.style.display = 'inline';
-    imageVideos.src = '../res/icons/arrowhead-up.png';
-    mainPanel.style.display = 'none';
-  }else{
-    optionsVideos.style.display = 'none';
-    imageVideos.src = '../res/icons/arrowhead-down.png';
-    imageFolderVideos.src = '../res/icons/folder_video_closed-32.png';
-  }
+btnMoreOptionsGuidelines.addEventListener('click', function() {
+    optionsGuidelines.style.display = 'inline';
+      image_submenu_guidelines.style.display = 'none';
+      btnMoreOptionsGuidelines.style.display = 'none';
+      optionsRoles.style.display = 'none';
+      optionsVideos.style.display = 'none';
+      configuringTweetDeck.style.display = 'none';
+      commonReplies.style.display = 'none';
+      itemSurvey.style.display = 'none';
+      btnMoreOptionsVideos.style.display = 'none';
+      btnMoreOptionsRoles.style.display = 'none';
+      menuTelegram.style.display = 'none';
+      menuAbout.style.display = 'none';
+      separatorLine.style.display = 'none';
+      menuInfo.style.display = 'none';
+      separatorLineAbout.style.display = 'none';
+      icon_btnMoreOptionsGuidelines.style.display = 'none';
+      icon_btnMoreOptionsRoles.style.display = 'none';
+      icon_btnMoreOptionsVideos.style.display = 'none';
+      iconMenuTelegram.style.display = 'none';
+      iconMenuSocialHelper.style.display = 'none';
 }, false);
 
-// dropdown click arrows
-document.getElementById('image_submenu_guidelines').addEventListener('click', function() {
-    if (optionsGuidelines.style.display === 'none'){
-      imageFolderGuidelines.src = '../res/icons/folder_opened-32.png';
-      optionsGuidelines.style.display = 'inline';
-      imageGuidelines.src = '../res/icons/arrowhead-up.png';
-    }else{
-      optionsGuidelines.style.display = 'none'
-      imageGuidelines.src = '../res/icons/arrowhead-down.png';
-      imageFolderGuidelines.src = '../res/icons/folder_closed-32.png';
-    }
+leftGuidelines.addEventListener('click', function(){
+      optionsGuidelines.style.display = 'none';
+      image_submenu_guidelines.style.display = 'block';
+      btnMoreOptionsGuidelines.style.display = 'inline';
+      optionsRoles.style.display = 'none';
+      optionsVideos.style.display = 'none';
+      configuringTweetDeck.style.display = 'inline';
+      commonReplies.style.display = 'inline';
+      itemSurvey.style.display = 'inline';
+      btnMoreOptionsVideos.style.display = 'inline';
+      btnMoreOptionsRoles.style.display = 'inline';
+      menuTelegram.style.display = 'inline';
+      menuAbout.style.display = 'inline';
+      separatorLine.style.display = 'block';
+      separatorLineAbout.style.display = 'block';
+      menuInfo.style.display = 'inline';
+      icon_btnMoreOptionsGuidelines.style.display = 'inline';
+      icon_btnMoreOptionsRoles.style.display = 'inline';
+      icon_btnMoreOptionsVideos.style.display = 'inline';
+      iconMenuTelegram.style.display = 'inline';
+      iconMenuSocialHelper.style.display = 'inline';
+      location.reload();
 }, false);
-document.getElementById('image_submenu_roles').addEventListener('click', function(){
-  if (optionRoles.style.display === 'none'){
-    imageFolderRoles.src = '../res/icons/folder_opened-32.png';
-    optionRoles.style.display = 'inline';
-    imageRoles.src = '../res/icons/arrowhead-up.png';
-  }else{
-    optionRoles.style.display = 'none';
-    imageRoles.src = '../res/icons/arrowhead-down.png';
-    imageFolderRoles.src = '../res/icons/folder_closed-32.png';
-  }
+
+btnMoreOptionsRoles.addEventListener('click', function(){
+      optionRoles.style.display = 'inline';
+      image_submenu_roles.style.display = 'none';
+      image_submenu_guidelines.style.display = 'none';
+      btnMoreOptionsGuidelines.style.display = 'none';
+      optionsGuidelines.style.display = 'none';
+      optionsVideos.style.display = 'none';
+      configuringTweetDeck.style.display = 'none';
+      commonReplies.style.display = 'none';
+      itemSurvey.style.display = 'none';
+      menuInfo.style.display = 'none';
+      btnMoreOptionsVideos.style.display = 'none';
+      btnMoreOptionsRoles.style.display = 'inline';
+      menuTelegram.style.display = 'none';
+      menuAbout.style.display = 'none';
+      separatorLine.style.display = 'none';
+      separatorLineAbout.style.display = 'none';
+      icon_btnMoreOptionsGuidelines.style.display = 'none';
+      icon_btnMoreOptionsRoles.style.display = 'none';
+      icon_btnMoreOptionsVideos.style.display = 'none';
+      iconMenuTelegram.style.display = 'none';
+      iconMenuSocialHelper.style.display = 'none';
 }, false);
-document.getElementById('image_submenu_videos').addEventListener('click', function(){
-  if (optionsVideos.style.display === 'none'){
-    imageFolderVideos.src = '../res/icons/folder_video_opened-32.png';
-    optionsVideos.style.display = 'inline';
-    imageVideos.src = '../res/icons/arrowhead-up.png';
-  }else{
-    optionsVideos.style.display = 'none';
-    imageVideos.src = '../res/icons/arrowhead-down.png';
-    imageFolderVideos.src = '../res/icons/folder_video_closed-32.png';
-  }
+
+leftRoles.addEventListener('click', function(){
+      optionsGuidelines.style.display = 'none';
+      image_submenu_guidelines.style.display = 'block';
+      image_submenu_videos.style.display = 'block';
+      image_submenu_roles.style.display = 'block';
+      btnMoreOptionsGuidelines.style.display = 'inline';
+      optionsRoles.style.display = 'none';
+      optionsVideos.style.display = 'none';
+      configuringTweetDeck.style.display = 'inline';
+      commonReplies.style.display = 'inline';
+      itemSurvey.style.display = 'inline';
+      btnMoreOptionsVideos.style.display = 'inline';
+      btnMoreOptionsRoles.style.display = 'inline';
+      menuTelegram.style.display = 'inline';
+      menuAbout.style.display = 'inline';
+      separatorLine.style.display = 'block';
+      menuInfo.style.display = 'inline';
+      separatorLineAbout.style.display = 'block';
+      icon_btnMoreOptionsGuidelines.style.display = 'inline';
+      icon_btnMoreOptionsRoles.style.display = 'inline';
+      icon_btnMoreOptionsVideos.style.display = 'inline';
+      iconMenuTelegram.style.display = 'inline';
+      iconMenuSocialHelper.style.display = 'inline';
+      location.reload();
+}, false);
+
+btnMoreOptionsVideos.addEventListener('click', function(){
+      optionsVideos.style.display = 'inline';
+      image_submenu_videos.style.display = 'none';
+      image_submenu_roles.style.display = 'none';
+      image_submenu_guidelines.style.display = 'none';
+      btnMoreOptionsGuidelines.style.display = 'none';
+      optionsGuidelines.style.display = 'none';
+      optionsRoles.style.display = 'none';
+      configuringTweetDeck.style.display = 'none';
+      commonReplies.style.display = 'none';
+      itemSurvey.style.display = 'none';
+      btnMoreOptionsVideos.style.display = 'inline';
+      btnMoreOptionsRoles.style.display = 'none';
+      menuTelegram.style.display = 'none';
+      menuAbout.style.display = 'none';
+      menuInfo.style.display = 'none';
+      separatorLine.style.display = 'none';
+      separatorLineAbout.style.display = 'none';
+      icon_btnMoreOptionsGuidelines.style.display = 'none';
+      icon_btnMoreOptionsRoles.style.display = 'none';
+      icon_btnMoreOptionsVideos.style.display = 'none';
+      iconMenuTelegram.style.display = 'none';
+      iconMenuSocialHelper.style.display = 'none';
+}, false);
+
+leftVideo.addEventListener('click', function(){
+      optionsGuidelines.style.display = 'none';
+      image_submenu_guidelines.style.display = 'block';
+      btnMoreOptionsGuidelines.style.display = 'inline';
+      optionsRoles.style.display = 'none';
+      optionsVideos.style.display = 'none';
+      image_submenu_roles.style.display = 'block';
+      image_submenu_videos.style.display = 'block';
+      configuringTweetDeck.style.display = 'inline';
+      commonReplies.style.display = 'inline';
+      itemSurvey.style.display = 'inline';
+      btnMoreOptionsVideos.style.display = 'inline';
+      btnMoreOptionsRoles.style.display = 'inline';
+      menuTelegram.style.display = 'inline';
+      menuAbout.style.display = 'inline';
+      separatorLine.style.display = 'block';
+      separatorLineAbout.style.display = 'block';
+      menuInfo.style.display = 'inline';
+      icon_btnMoreOptionsGuidelines.style.display = 'inline';
+      icon_btnMoreOptionsRoles.style.display = 'inline';
+      icon_btnMoreOptionsVideos.style.display = 'inline';
+      iconMenuTelegram.style.display = 'inline';
+      iconMenuSocialHelper.style.display = 'inline';
+      location.reload();
 }, false);
 
 document.addEventListener('click', function(event) {
@@ -174,5 +283,55 @@ document.addEventListener('click', function(event) {
     var pageMenuTelegram = browser.tabs.update({url: `https://t.me/joinchat/CJxxoEBuwEp8NA2tbynaKg`});
     pageMenuTelegram.then(onUpdated, onError);
   }
+  else if (event.target.id == 'menuAbout') {
+    var aboutMenu = window.open('about.html', '_blank');
+    aboutMenu.then(onUpdated, onError);
+  }
   event.preventDefault();
 });
+
+function verifyPage(){
+    browser.tabs.query({active: true, windowId: browser.windows.WINDOW_ID_CURRENT})
+      .then(tabs => browser.tabs.get(tabs[0].id))
+      .then(tab => {
+        if(tab.url == "about:preferences") {
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:config"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:addons"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:debugging"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:support"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:newtab"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:buildconfig"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:cache"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:checkerboard"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:crashes"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:credits"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:devtools"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:downloads"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:home"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:memory"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:mozilla"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:sessionrestore"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else if (tab.url == "about:plugins"){
+            browser.browserAction.setIcon({path: iconLocalOff});
+        }else{
+            browser.browserAction.setIcon({path: iconLocal});
+        }
+    });
+}

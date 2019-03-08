@@ -5,72 +5,79 @@
   <link rel= "stylesheet" href= "../css/popup.css"/>
 </head>
 <body>
-  <div class= "panel">
-    <div class= "panel-section-body">
-      <div class= "panel-list-item">
-				<img class= "item_icon" src= "../res/icons/folder_closed-32.png" id= "folderGuidelines"><a href= "#" class= "default" data-i18n = "menuSocialSupportGuidelines" id= "btnMoreOptionsGuidelines"></a><img class= "item_icon_right" src= "../res/icons/arrowhead-down.png" id= "image_submenu_guidelines"/>
-      </div>
-      <div class="dropdown-container"  id="optionsGuidelines">
-        <div class= "panel-list-item">
-          <img class= "item_icon_options" src= "../res/icons/article-32.png"><a href="#" class= "defaultOptions" data-i18n= "menuTipsFromCommunity" id= "menuTipsFromCommunity"></a>
-        </div>
-        <div class= "panel-list-item">
-          <img class= "item_icon_options" src= "../res/icons/article-32.png"><a href="#" class= "defaultOptions" data-i18n= "menuHowDoIgetHelp" id= "menuHowDoIgetHelp"></a>
-        </div>
-        <div class= "panel-list-item">
-          <img class= "item_icon_options" src= "../res/icons/article-32.png"><a href="#" class= "defaultOptions" data-i18n= "menuEscalate" id="menuEscalate"></a>
-        </div>
+<div class= "panel">
+  <div class= "panel-section-body" id="main_panel">
+    <div class= "panel-list-item" id= "image_submenu_guidelines">
+      <label id= "btnMoreOptionsGuidelines" class= "default" data-i18n = "menuSocialSupportGuidelines"></label><img class= "item_icon" id="icon_btnMoreOptionsGuidelines" src= "../res/icons/right.png">
     </div>
-    <div class= "panel-list-item">
-      <img class= "item_icon" src= "../res/icons/folder_closed-32.png" id= "folderRoles"><a href= "#" class= "default" data-i18n = "menuRolesInTheSocialSupportProgram" id="btnMoreOptionsRoles" ></a><img class= "item_icon_right" src= "../res/icons/arrowhead-down.png" id= "image_submenu_roles"/>
+    <div class="dropdown-container" id="optionsGuidelines">
+      <img class="icon-list-item" src= "../res/icons/left.png" id="leftGuidelines"><label data-i18n="menuSocialSupportGuidelines" class="align" style="margin-right:90px;"></label>
+      <div class="panel-section-separator"></div>
+      <div class= "panel-list-item">
+        <label class= "defaultOptions" data-i18n= "menuTipsFromCommunity" id= "menuTipsFromCommunity"></label>
+      </div>
+      <div class= "panel-list-item">
+        <label class= "defaultOptions" data-i18n= "menuHowDoIgetHelp" id= "menuHowDoIgetHelp"></label>
+      </div>
+      <div class= "panel-list-item">
+        <label class= "defaultOptions" data-i18n= "menuEscalate" id="menuEscalate"></label>
+      </div>
+    </div>
+    <div class= "panel-list-item" id= "image_submenu_roles">
+      <label class= "default" data-i18n = "menuRolesInTheSocialSupportProgram" id="btnMoreOptionsRoles" ></label><img class= "item_icon" id="icon_btnMoreOptionsRoles" src= "../res/icons/right.png">
     </div>
     <div class="dropdown-container"  id="optionsRoles">
+      <img class="icon-list-item" src= "../res/icons/left.png" id="leftRoles"><label data-i18n="menuRolesInTheSocialSupportProgram" class="align" style="margin-right:50px;"></label>
+      <div class="panel-section-separator"></div>
       <div class= "panel-list-item">
-        <img class= "item_icon_options" src= "../res/icons/article-32.png"><a href="#" class= "defaultOptions" data-i18n= "menuTheCasualSocialHelper" id= "menuTheCasualSocialHelper"></a>
+        <label class= "defaultOptions" data-i18n= "menuTheCasualSocialHelper" id= "menuTheCasualSocialHelper"></label>
       </div>
       <div class= "panel-list-item">
-        <img class= "item_icon_options" src= "../res/icons/article-32.png"><a href="#" class= "defaultOptions" data-i18n= "menuTheOfficialSocialHelper" id= "menuTheOfficialSocialHelper"></a>
+        <label class= "defaultOptions" data-i18n= "menuTheOfficialSocialHelper" id= "menuTheOfficialSocialHelper"></label>
       </div>
       <div class= "panel-list-item">
-        <img class= "item_icon_options" src= "../res/icons/article-32.png"><a href="#" class= "defaultOptions" data-i18n= "menuTheTriager" id="menuTheTriager"></a>
+        <label class= "defaultOptions" data-i18n= "menuTheTriager" id="menuTheTriager"></label>
       </div>
       <div class= "panel-list-item">
-        <img class= "item_icon_options" src= "../res/icons/article-32.png"><a href="#" class= "defaultOptions" data-i18n= "menuTheSocialProgramModerator" id="menuTheSocialProgramModerator"></a>
+        <label class= "defaultOptions" data-i18n= "menuTheSocialProgramModerator" id="menuTheSocialProgramModerator"></label>
       </div>
-  </div>
-  <div class= "panel-list-item">
-    <img class= "item_icon" src= "../res/icons/folder_video_closed-32.png" id= "folderVideos"><a href= "#" class= "default" data-i18n = "menuVideoFolder" id="btnMoreOptionsVideos" ></a><img class= "item_icon_right" src= "../res/icons/arrowhead-down.png" id= "image_submenu_videos"/>
-  </div>
-  <div class="dropdown-container"  id="optionsVideos">
-    <div class= "panel-list-item">
-      <img class= "item_icon_options" src= "../res/icons/play_button-32.png"><a href="#" class= "defaultOptions" data-i18n= "menuVideoConfiguringTweetDeck" id= "menuVideoConfiguringTweetDeck"></a>
+    </div>
+    <div class= "panel-list-item"  id= "image_submenu_videos">
+      <label class= "default" data-i18n = "menuVideoFolder" id="btnMoreOptionsVideos" ></label><img class= "item_icon" id="icon_btnMoreOptionsVideos" src= "../res/icons/right.png">
+    </div>
+    <div class="dropdown-container"  id="optionsVideos">
+      <img class="icon-list-item" src= "../res/icons/left.png" id="leftVideo"><label data-i18n="menuVideoFolder" class="align" style="margin-right:90px;"></label>
+      <div class="panel-section-separator"></div>
+      <div class= "panel-list-item">
+        <label class= "defaultOptions" data-i18n= "menuVideoConfiguringTweetDeck" id= "menuVideoConfiguringTweetDeck"></label>
+      </div>
+      <div class= "panel-list-item">
+        <label class= "defaultOptions" data-i18n= "menuVideoHowIgnoreUser" id= "menuVideoHowIgnoreUser"></label>
+      </div>
+      <div class= "panel-list-item">
+        <label class= "defaultOptions" data-i18n= "menuVideoGetOldAnswersFromAoA" id="menuVideoGetOldAnswersFromAoA"></label>
+      </div>
     </div>
     <div class= "panel-list-item">
-      <img class= "item_icon_options" src= "../res/icons/play_button-32.png"><a href="#" class= "defaultOptions" data-i18n= "menuVideoHowIgnoreUser" id= "menuVideoHowIgnoreUser"></a>
+      <label class= "default" data-i18n = "menuConfiguringTweetDeck" id= "menuConfiguringTweetDeck"></label>
     </div>
     <div class= "panel-list-item">
-      <img class= "item_icon_options" src= "../res/icons/play_button-32.png"><a href="#" class= "defaultOptions" data-i18n= "menuVideoGetOldAnswersFromAoA" id="menuVideoGetOldAnswersFromAoA"></a>
+      <label class= "default" data-i18n = "menuCommonReplies" id= "menuCommonReplies" ></label>
+    </div>
+    <div class= "panel-section-separator" id="separatorLine"></div>
+    <div class = "panel-list-item">
+      <img class="icon-list-item-about" src= "../res/icons/headset.png" id="iconMenuSocialHelper" width="16" height="16" style="margin-left:-4px;"><label class= "menuWithIcon" data-i18n = "menuItemSurvey" id= "menuItemSurvey" style="float:right"></label>
+    </div>
+    <div class= "panel-list-item">
+      <img class="icon-list-item-about" src= "../res/icons/telegram.png" id="iconMenuTelegram" width="16" height="16" style="margin-left:-4px;"><label class= "menuWithIcon" data-i18n = "menuItemTelegram" id= "menuTelegram" style="float:right"></label>
+    </div>
+    <div class= "panel-section-separator" id="separatorLineAbout"></div>
+    <div class="panel-list-item">
+      <img class="icon-list-item-about" src= "../res/icons/info.png" id="menuInfo" width="16" height="16" style="margin-left:-4px;"><label class= "menuWithIcon" data-i18n = "menuAbout" id= "menuAbout" style="float:right"></label>
     </div>
   </div>
-  <div class= "panel-list-item">
-    <img class= "item_icon" src= "../res/icons/article-32.png"><a href= "#" class= "default" data-i18n = "menuConfiguringTweetDeck" id= "menuConfiguringTweetDeck"></a>
-  </div>
-  <div class= "panel-list-item">
-    <img class= "item_icon" src= "../res/icons/article-32.png"><a href= "#" class= "default" data-i18n = "menuCommonReplies" id= "menuCommonReplies" ></a>
-  </div>
-      <div class= "panel-section-separator"></div>
-      <div>
-        <a id= "joinUS" class= "joinUS" data-i18n= "menuJoinUS"></a>
-      </div>
-      <div class = "panel-list-item">
-        <img class= "item_icon" src="../res/icons/article_survey-32.png"><a href= "#" class= "default" data-i18n = "menuItemSurvey" id= "menuItemSurvey"></a>
-      </div>
-			<div class= "panel-list-item">
-				<img class= "item_icon" src= "../res/icons/telegram-32.png"><a href= "#" class= "default" data-i18n = "menuItemTelegram" id= "menuTelegram"></a>
-      </div>
-    </div>
 </div>
-  <script src= "../js/popup.js"></script>
-  <script src= "../js/language.js"></script>
+<script src= "../js/popup.js"></script>
+<script src= "../js/language.js"></script>
 </body>
 </html>
