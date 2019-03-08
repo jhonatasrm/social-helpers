@@ -21,7 +21,6 @@ The add-on counts with the following useful links, which will help you take the 
 6. Become a Social Helper
 7. Join us in the Telegram group
 
-This add-on 
 ## How to test this Add-on
 
 1. Clone this repository git clone ```https://github.com/jhonatasrm/social-helpers.git```
