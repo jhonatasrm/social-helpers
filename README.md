@@ -49,6 +49,3 @@ To learn more about webextensions development, see this [Mozilla developer Netwo
 
 ## License
 This repository is available under the [Mozilla Public License, version 2.0](https://github.com/jhonatasrm/social-helpers/blob/master/LICENSE)
-
-## Credits
-Icons made by [Twitter](https://www.flaticon.com/authors/twitter) and [Smashicons](https://www.flaticon.com/authors/Smashicons) from [www.flaticon.com](www.flaticon.com) 
