@@ -10,6 +10,8 @@
 
 This add-on provides help to answer questions on Twitter using the hashtag #fxhelp, gives some tips, has built-in common replies and explains how the Social Support program works.
 
+![Social Helpers Screenshot](social-helpers.gif)
+
 ## Features
 The add-on counts with the following useful links, which will help you take the first steps and start contributing:
 
