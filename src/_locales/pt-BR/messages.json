@@ -16,7 +16,7 @@
     "description": "Link Common Replies"
   },
   "about": {
-    "message": "Sobre Social Helpers"
+    "message": "Sobre o Social Helpers"
   },
   "about_title": {
     "message": "Sobre"
@@ -104,63 +104,6 @@
   },
   "aboutItem7": {
     "message": "7. Junte-se a nós no grupo do Telegram"
-  },
-  "release0": {
-    "message": "Lançamento"
-  },
-  "release0d": {
-    "message": "v1.0 (19 de Fevereiro de 2018)"
-  },
-  "release1": {
-    "message": "Correção de compatibilidade de versão\nCorreção do link para se tornar um Social Helper\nCorreções Menores"
-  },
-  "release1d": {
-    "message": "v1.1 (20 de Fevereiro de 2018)"
-  },
-  "release2": {
-    "message": "Abrir submenu clicando na seta\nCorreções menores"
-  },
-  "release2d": {
-    "message": "v1.2 (29 de Março de 2018)"
-  },
-  "release3": {
-    "message": "Atualização de links\nCorreções menores"
-  },
-  "release3d": {
-    "message": "v1.3 (14 de Abril 2018)"
-  },
-  "release4": {
-    "message": "Atualização de links\nCorreções menores"
-  },
-  "release4d": {
-    "message": "v1.4 (13 de Junho de 2018)"
-  },
-  "release5": {
-    "message": "Atualização de links\nAbrir respostas comuns em outra aba\nCorreções menores"
-  },
-  "release5d": {
-    "message": "v1.5 (26 de Julho de 2018)"
-  },
-  "release6": {
-    "message": "Atualização de segurança\nMelhoria de desempenho"
-  },
-  "release6d": {
-    "message": "v1.6 (13 de Janeiro de 2018)"
-  },
-  "release7": {
-    "message": "Correções menores"
-  },
-  "release7d": {
-    "message": "v1.7 (3 de Março de 2019)"
-  },
-  "release8": {
-    "message": "Atualização de segurança\nRedesign"
-  },
-  "release8d": {
-    "message": "v1.8 (8 de Março de 2019)"
-  },
-  "changelog": {
-    "message": "Alterações"
   },
   "menuAbout": {
     "message": "Sobre"

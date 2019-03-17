@@ -12,8 +12,6 @@ html, body {
 	color: #00000F;
 	margin-left:8px;
 	width: 250px;
-	padding-top:7px;
-    padding-bottom:2px;
     margin-left: 20px;
 }
 .align {
@@ -34,7 +32,6 @@ html, body {
 	cursor: default;
 	color: #00000F;
 	width: 250px;
-	margin-top: 2px;
 	margin-left: 20px;
 }
 .guidelines {
