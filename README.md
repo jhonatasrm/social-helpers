@@ -1,6 +1,6 @@
-[<img align="right" src="https://img.shields.io/github/issues/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/license/jhonatasrm/social-helpers.svg)
-[<img align="right" src="https://img.shields.io/github/license/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/issues/jhonatasrm/social-helpers.svg)
-[<img align="right" src="https://img.shields.io/github/forks/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/issues/jhonatasrm/social-helpers.svg)
+[<img align="right" src="https://img.shields.io/github/issues/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/issues/jhonatasrm/social-helpers.svg)
+[<img align="right" src="https://img.shields.io/github/license/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/license/jhonatasrm/social-helpers.svg)
+[<img align="right" src="https://img.shields.io/github/forks/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/forks/jhonatasrm/social-helpers.svg)
 [<img align="right" src="https://img.shields.io/github/stars/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/stars/jhonatasrm/social-helpers.svg)
 [<img align="right" src="https://img.shields.io/github/release/jhonatasrm/social-helpers.svg">](https://img.shields.io/github/release/jhonatasrm/social-helpers.svg)
 
