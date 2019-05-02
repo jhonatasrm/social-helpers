@@ -35,10 +35,10 @@ The add-on counts with the following useful links, which will help you take the 
 
 ## How Contribute
 
-Have a suggestion, doubt or encountered an error? Please open a new [issue](https://github.com/jhonatasrm/social-helpers/issues/new).
+Have a suggestion, doubt or encountered an error? Please open a new [issue](https://github.com/jhonatasrm/social-helpers/issues/new)
 
 ## Learn More
-To learn more about webextensions development, see this [Mozilla developer Network documentation](https://developer.mozilla.org/en-US/Add-ons/WebExtensions).
+To learn more about webextensions development, see this [Mozilla developer Network documentation](https://developer.mozilla.org/en-US/Add-ons/WebExtensions)
 
 ## License
 This repository is available under the [Mozilla Public License, version 2.0](https://github.com/jhonatasrm/social-helpers/blob/master/LICENSE)
