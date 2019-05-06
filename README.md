@@ -29,9 +29,9 @@ The add-on counts with the following useful links, which will help you take the 
 
 2. In the Firefox address bar type ```about:debugging```
 
-3. Click ```Load Temporary Add-on```, a dialog window opens.
+3. Click ```Load Temporary Add-on```, a dialog window opens
 
-4. In the cloned repository, select the ```manifest.json``` file. The add-on icon will appear in your toolbar.
+4. In the cloned repository, select the ```manifest.json``` file. The add-on icon will appear in your toolbar
 
 ## How Contribute
 
