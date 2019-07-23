@@ -3,14 +3,6 @@ var strWindowFeatures = "menubar=no,location=yes,resizable=no,scrollbars=yes,sta
 var iconLocal = '../res/icons/social_helpers-32.png';
 var iconLocalOff = '../res/icons/social_helpers_off-32.png';
 
-// start about.html
-function handleInstalled() {
-    browser.tabs.create({
-    url: "../html/about.html"
-    });
-}
-browser.runtime.onInstalled.addListener(handleInstalled);
-
 browser.tabs.onUpdated.addListener(verifyPage);
 
 // main panel
