@@ -37,6 +37,8 @@ The add-on counts with the following useful links, which will help you take the 
 
 Have a suggestion, doubt or encountered an error? Please open a new [issue](https://github.com/jhonatasrm/social-helpers/issues/new)
 
+Contributions are welcome, feel free to submit a pull :)
+
 ## Learn More
 To learn more about webextensions development, see this [Mozilla developer Network documentation](https://developer.mozilla.org/en-US/Add-ons/WebExtensions)
 
