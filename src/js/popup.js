@@ -266,9 +266,9 @@ document.addEventListener('click', function(event) {
     var pageMenuVideoGetOldAnswersFromAoA = browser.tabs.update({url: `https://www.screencast.com/t/q9aIKq9nQv`});
     pageMenuVideoGetOldAnswersFromAoA.then(onUpdated, onError);
   }
-  // survey
   else if (event.target.id == 'menuItemSurvey') {
-    window.open("https://goo.gl/forms/88APypWlZlRBaliG3", "survey", strWindowFeatures);
+    let becomeASocialHelper = "https://support.mozilla.org/en-US/kb/social-support-guidelines";
+    window.open(becomeASocialHelper);
   }
   // telegram channel
   else if (event.target.id == 'menuTelegram') {
